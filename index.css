@@ -1,0 +1,89 @@
+body{
+    background-image: url("images/pole.jpg")
+}
+
+.head{
+    background-color: #00c8f8;
+    font-size: 2rem;
+    font-family: 'Roboto Condensed', serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 10px;
+    border-color: black;
+}
+
+nav.flexx{
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+}
+
+header nav>div{
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #00c8f8;
+    border-radius: 10px;
+    border-color: black;
+}
+
+main nav>div{
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-bottom: 2px;
+    text-decoration: none;
+    font-size: 1rem;
+    font: bold;
+    background-color: #00c8f8;
+    border-color: black;
+    
+}
+
+.flexx{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexmain{
+    display: flex;
+    flex-direction: column;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.m-0-auto{
+    margin: 0 auto;
+}
+
+.advertising{
+    background-color: white;
+    font-size: 2rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.h-300{
+    height: 300px;
+}
+
+.footer{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
