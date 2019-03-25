@@ -69,6 +69,10 @@ main nav>div{
     margin: 0 auto;
 }
 
+.mgt-25{
+    margin-top: 25px;
+}
+
 .advertising{
     background-color: white;
     font-size: 2rem;
@@ -76,14 +80,13 @@ main nav>div{
     text-align: center;
 }
 
-.h-300{
-    height: 300px;
+.h-500{
+    height: 500px;
 }
 
 .footer{
     background-color: black;
     height: 100px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    margin-top: 50px;
 }
