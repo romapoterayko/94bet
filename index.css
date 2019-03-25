@@ -54,7 +54,7 @@ main nav>div{
 
 .flexx{
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
 }
 
 .flexmain{
