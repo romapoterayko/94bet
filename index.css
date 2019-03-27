@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+:root{
+    --main-font-color: black;
+}
+
 
 body{
     background-image: url(images/pole.jpg);
     font-family: 'Roboto Condensed', sans-serif;
     
+}
+
+div, nav{
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -19,14 +28,49 @@ a{
     margin: 0 auto;
     width: 50%;
     border-radius: 10px;
-    border-color: black;
+    border: 1px solid black;
 }
 
-nav.flexx{
-    margin: 0 auto;
-    width: 50%;
-    padding: 10px;
+.flex-menu{
+    display: flex;
+    justify-content: center;
+    
 }
+
+.flex-menu-item{
+    width: 100%;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.flex-menu-item:hover{
+    background-color: blue;
+}
+
+
+@media(max-width: 880px){
+    .head, header div.w-50{
+        width: 75%;
+    }
+}
+
+@media(max-width: 660px){
+    .head, header div.w-50{
+        width: 100%;
+    }
+}
+
+@media(max-width: 320px){
+    .flex-menu{
+        flex-direction: column;
+        
+    }
+    
+    .flex-menu-item{
+        margin-top: 4px;
+    }
+}
+
 
 header nav>div{
     width: 25%;
@@ -52,7 +96,7 @@ main nav>div{
     
 }
 
-.flexx{
+.flex{
     display: flex;
     justify-content: space-around;
 }
@@ -78,8 +122,38 @@ main nav>div{
     margin: 0 auto;
 }
 
+.mg-top-bottom{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mgt-5{
+    margin-top: 5px;
+}
+
 .mgt-25{
     margin-top: 25px;
+}
+
+.prediction{
+    border: 1px solid black;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.prediction-head{
+    
+}
+
+.flag{
+    width: 30px;
+}
+
+.grid-prediction{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+    
 }
 
 .advertising{
