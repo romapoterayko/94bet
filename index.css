@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
 
 :root{
     --main-font-color: black;
@@ -22,13 +24,24 @@ a{
 }
 
 .head{
-    background-color: #00c8f8;
+    background-image: url(images/ua-flag.png);
+    background-position: center;
+    background-size: cover;
     font-size: 2rem;
     text-align: center;
     margin: 0 auto;
     width: 50%;
     border-radius: 10px;
     border: 1px solid black;
+}
+
+.headtext{
+    font-family: 'Ruslan Display', cursive;
+    text-shadow: 2px 2px 4px white;
+}
+
+.logination{
+    width: 100%;
 }
 
 .flex-menu{
@@ -47,6 +60,75 @@ a{
     background-color: blue;
 }
 
+.advertising{
+    display: block;
+    background-color: white;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.banner{
+    background-image: url(images/barca_real_match.jpg);
+    border-radius: 10px;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-banner, .grid-content{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 20px; 
+}
+
+.grid-prediction{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+    background-color: #00c8f8;
+    min-height: 500px;
+    border-radius: 10px;
+}
+
+.prediction{
+    border: 1px solid black;
+    font-size: 1rem;
+    text-align: left;
+    margin: 5px;
+    background-color: white;
+    min-height: 150px;
+}
+
+.sorted-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.sorted-menu-item{
+    width: 100%;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.sorted-menu-item a{
+    padding-left: 10px;
+}
+
+@media(max-width:1280px){
+    .advertising{
+        display: none;
+    }
+    
+    .grid-banner{
+        grid-template-columns: 1fr; 
+    }
+    
+    .grid-content{
+        grid-template-columns: 1fr 3fr; 
+    }
+}
 
 @media(max-width: 880px){
     .head, header div.w-50{
@@ -58,9 +140,21 @@ a{
     .head, header div.w-50{
         width: 100%;
     }
+    
+    .grid-content{
+        display: block;
+    }
+    
+    .grid-prediction{
+        margin-top: 25px;
+    }
+    
+    .sorted-menu-item{
+        width: 320px;
+    }
 }
 
-@media(max-width: 320px){
+@media(max-width: 440px){
     .flex-menu{
         flex-direction: column;
         
@@ -69,7 +163,13 @@ a{
     .flex-menu-item{
         margin-top: 4px;
     }
+    
+    .grid-content, .grid-prediction{
+        display: block; 
+    }
 }
+
+
 
 
 header nav>div{
@@ -84,6 +184,7 @@ header nav>div{
 }
 
 main nav>div{
+    min-width: 320px;
     width: 100%;
     position: relative;
     left: 0;
@@ -93,7 +194,7 @@ main nav>div{
     font: bold;
     background-color: #00c8f8;
     border-color: black;
-    
+    border-radius: 10px;
 }
 
 .flex{
@@ -135,11 +236,7 @@ main nav>div{
     margin-top: 25px;
 }
 
-.prediction{
-    border: 1px solid black;
-    font-size: 1rem;
-    text-align: left;
-}
+
 
 .prediction-head{
     
@@ -149,19 +246,9 @@ main nav>div{
     width: 30px;
 }
 
-.grid-prediction{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1px;
-    
-}
 
-.advertising{
-    background-color: white;
-    font-size: 2rem;
-    border: 1px solid black;
-    text-align: center;
-}
+
+
 
 .h-500{
     height: 500px;
