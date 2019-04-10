@@ -13,11 +13,6 @@ body{
     
 }
 
-div, nav{
-    margin: 0;
-    padding: 0;
-}
-
 a{
     text-decoration: none;
     color: black;
@@ -41,7 +36,14 @@ a{
 }
 
 .logination{
-    width: 100%;
+    align-content: center;
+    display: flex;
+    justify-content: end!important;
+}
+
+.logination-item{
+    position: relative;
+    margin: 0 3px;
 }
 
 .flex-menu{
@@ -58,6 +60,8 @@ a{
 
 .flex-menu-item:hover{
     background-color: blue;
+    color: white;
+    text-decoration: none;
 }
 
 .advertising{
@@ -134,6 +138,11 @@ a{
     .head, header div.w-50{
         width: 75%;
     }
+    
+    .logination{
+        justify-content: center;
+    }
+    
 }
 
 @media(max-width: 660px){
@@ -260,3 +269,4 @@ main nav>div{
     width: 100%;
     margin-top: 50px;
 }
+
