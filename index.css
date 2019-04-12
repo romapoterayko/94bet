@@ -13,9 +13,27 @@ body{
     
 }
 
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
 a{
     text-decoration: none;
     color: black;
+}
+
+.logo{
+     margin: auto;
+}
+
+.logotype{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navbar-toggler{
+    background-color: #00c8f8;
 }
 
 .head{
@@ -38,7 +56,7 @@ a{
 .logination{
     align-content: center;
     display: flex;
-    justify-content: end!important;
+    justify-content: center;
 }
 
 .logination-item{
@@ -134,13 +152,15 @@ a{
     }
 }
 
+@media(max-width: 992px){
+    .col-6{
+        max-width: 100%;
+    }
+}
+
 @media(max-width: 880px){
     .head, header div.w-50{
         width: 75%;
-    }
-    
-    .logination{
-        justify-content: center;
     }
     
 }
@@ -177,9 +197,6 @@ a{
         display: block; 
     }
 }
-
-
-
 
 header nav>div{
     width: 25%;
