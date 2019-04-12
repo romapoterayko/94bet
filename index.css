@@ -23,13 +23,14 @@ a{
     color: black;
 }
 
-.logo{
-     margin: auto;
+.logotype{
+    width: 200px;
+    border-radius: 10px;
 }
 
-.logotype{
-    width: 100%;
-    border-radius: 10px;
+.navbar{
+    position: relative;
+    margin-left: auto;
 }
 
 .navbar-toggler{
@@ -43,7 +44,7 @@ a{
     font-size: 2rem;
     text-align: center;
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid black;
 }
@@ -51,17 +52,6 @@ a{
 .headtext{
     font-family: 'Ruslan Display', cursive;
     text-shadow: 2px 2px 4px white;
-}
-
-.logination{
-    align-content: center;
-    display: flex;
-    justify-content: center;
-}
-
-.logination-item{
-    position: relative;
-    margin: 0 3px;
 }
 
 .flex-menu{
@@ -153,8 +143,16 @@ a{
 }
 
 @media(max-width: 992px){
-    .col-6{
+    .col-lg-6{
         max-width: 100%;
+    }
+    
+    .logo{
+        width: 50%;
+    }
+    
+    .head{
+        width: 100%;
     }
 }
 
@@ -198,9 +196,16 @@ a{
     }
 }
 
-header nav>div{
-    width: 25%;
-    margin: 0 auto;
+header .flex-menu-item{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #00c8f8;
+    border-radius: 10px;
+    border-color: black;
+}
+
+header ul{
     text-align: center;
     text-decoration: none;
     font-size: 1rem;
@@ -210,7 +215,7 @@ header nav>div{
 }
 
 main nav>div{
-    min-width: 320px;
+    min-width: 200px;
     width: 100%;
     position: relative;
     left: 0;

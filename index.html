@@ -12,107 +12,205 @@
 
 <body>
     <div class="container">
-        <header>
-            <div class="row">
-                <div class="col-3 logo">
-                    <img class="logotype" src="images/logo.jpg" alt="94 bet logo"></img>
-                </div>
-                <div class="head mg-top-bottom col-6">
-                    <span class="headtext"><b>Ставки на футбол</b></span>
-                </div>
-                <div class="row logination col-3">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Вхід</button>
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Введіть логін і пароль</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <!--<header>-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-lg-6 logo">-->
+        <!--            <img class="logotype" src="images/logo.jpg" alt="94 bet logo"></img>-->
+        <!--        </div>-->
+        <!--        <div class="row logination  col-6 col-lg-6 col-md-6 col-sm-6" id="logination">-->
+        <!--            <nav class="navbar navbar-expand-lg navbar-light">-->
+        <!--                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+        <!--                    <span class="navbar-toggler-icon"></span>-->
+        <!--                </button>-->
+        <!--                <div class="collapse navbar-collapse" id="navbarNav">-->
+        <!--                    <ul class="navbar-nav mr-auto">-->
+        <!--                        <li class="nav-item">-->
+        <!--                            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Вхід</button>-->
+        <!--                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+        <!--                                <div class="modal-dialog" role="document">-->
+        <!--                                    <div class="modal-content">-->
+        <!--                                        <div class="modal-header">-->
+        <!--                                            <h5 class="modal-title" id="exampleModalLabel">Введіть логін і пароль</h5>-->
+        <!--                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+        <!--                                                  <span aria-hidden="true">&times;</span>-->
+        <!--                                            </button>-->
+        <!--                                        </div>-->
+        <!--                                        <div class="modal-body">-->
+        <!--                                            <form class="px-4 py-3">-->
+        <!--                                                <div class="form-group">-->
+        <!--                                                    <label for="exampleDropdownFormEmail1">Email address</label>-->
+        <!--                                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">-->
+        <!--                                                </div>-->
+        <!--                                                <div class="form-group">-->
+        <!--                                                    <label for="exampleDropdownFormPassword1">Password</label>-->
+        <!--                                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">-->
+        <!--                                                </div>-->
+        <!--                                                <div class="form-group">-->
+        <!--                                                    <div class="form-check">-->
+        <!--                                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">-->
+        <!--                                                        <label class="form-check-label" for="dropdownCheck">-->
+        <!--                                                          Remember me-->
+        <!--                                                        </label>-->
+        <!--                                                    </div>-->
+        <!--                                                </div>-->
+        <!--                                                <button type="submit" class="btn">Sign in</button>-->
+        <!--                                            </form>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </li>-->
+        <!--                        <li class="nav-item">-->
+        <!--                            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Реєстрація</button>-->
+        <!--                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+        <!--                                <div class="modal-dialog" role="document">-->
+        <!--                                    <div class="modal-content">-->
+        <!--                                        <div class="modal-header">-->
+        <!--                                            <h5 class="modal-title" id="exampleModalLabel">Введіть логін і пароль</h5>-->
+        <!--                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+        <!--                                                 <span aria-hidden="true">&times;</span>-->
+        <!--                                            </button>-->
+        <!--                                        </div>-->
+        <!--                                        <div class="modal-body">-->
+        <!--                                            <form class="px-4 py-3">-->
+        <!--                                                <div class="form-group">-->
+        <!--                                                    <label for="exampleDropdownFormEmail1">Email address</label>-->
+        <!--                                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">-->
+        <!--                                                </div>-->
+        <!--                                                <div class="form-group">-->
+        <!--                                                    <label for="exampleDropdownFormPassword1">Password</label>-->
+        <!--                                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">-->
+        <!--                                                </div>-->
+        <!--                                                <div class="form-group">-->
+        <!--                                                    <div class="form-check">-->
+        <!--                                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">-->
+        <!--                                                        <label class="form-check-label" for="dropdownCheck">-->
+        <!--                                          Remember me-->
+        <!--                                        </label>-->
+        <!--                                                    </div>-->
+        <!--                                                </div>-->
+        <!--                                                <button type="submit" class="btn btn-primary">Sign in</button>-->
+        <!--                                            </form>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </li>-->
+        <!--                    </ul>-->
+        <!--                </div>-->
+        <!--            </nav>-->
+        <!--        </div>-->
+        <!--        <div class="head mg-top-bottom col-lg-12 col-md-12 col-sm-12">-->
+        <!--            <span class="headtext"><b>Ставки на футбол.UA</b></span>-->
+        <!--        </div>-->
+
+        <!--    </div>-->
+
+        <!--    <div class="mg-top-bottom m-auto col-lg-6">-->
+        <!--        <nav class="flex-menu">-->
+        <!--            <div class="flex-menu-item"><a href="#">Прогнози</a></div>-->
+        <!--            <div class="flex-menu-item"><a href="#">Експреси</a></div>-->
+        <!--            <div class="flex-menu-item"><a href="#">Букмекери</a></div>-->
+        <!--            <div class="flex-menu-item"><a href="#">Блог</a></div>-->
+        <!--        </nav>-->
+        <!--    </div>-->
+        <!--</header>-->
+
+        <header class="container" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <img class="logotype" src="images/logo.jpg" alt="94 bet logo"></img>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Вхід</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Введіть логін і пароль</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                           <span aria-hidden="true">&times;</span>
                                                     </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="px-4 py-3">
+                                                <div class="form-group">
+                                                    <label for="exampleDropdownFormEmail1">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
                                                 </div>
-                                                <div class="modal-body">
-                                                    <form class="px-4 py-3">
-                                                        <div class="form-group">
-                                                            <label for="exampleDropdownFormEmail1">Email address</label>
-                                                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="exampleDropdownFormPassword1">Password</label>
-                                                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                                                <label class="form-check-label" for="dropdownCheck">
+                                                <div class="form-group">
+                                                    <label for="exampleDropdownFormPassword1">Password</label>
+                                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                        <label class="form-check-label" for="dropdownCheck">
                                                                   Remember me
                                                                 </label>
-                                                            </div>
-                                                        </div>
-                                                        <button type="submit" class="btn">Sign in</button>
-                                                    </form>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                                <button type="submit" class="btn">Sign in</button>
+                                            </form>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Реєстрація</button>
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Введіть логін і пароль</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Реєстрація</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Введіть логін і пароль</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                          <span aria-hidden="true">&times;</span>
                                                     </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="px-4 py-3">
+                                                <div class="form-group">
+                                                    <label for="exampleDropdownFormEmail1">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
                                                 </div>
-                                                <div class="modal-body">
-                                                    <form class="px-4 py-3">
-                                                        <div class="form-group">
-                                                            <label for="exampleDropdownFormEmail1">Email address</label>
-                                                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="exampleDropdownFormPassword1">Password</label>
-                                                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                                                <label class="form-check-label" for="dropdownCheck">
+                                                <div class="form-group">
+                                                    <label for="exampleDropdownFormPassword1">Password</label>
+                                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                        <label class="form-check-label" for="dropdownCheck">
                                                   Remember me
                                                 </label>
-                                                            </div>
-                                                        </div>
-                                                        <button type="submit" class="btn btn-primary">Sign in</button>
-                                                    </form>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                            </form>
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+            <div class="head mg-top-bottom col-lg-12 col-md-12 col-sm-12">
+                <span class="headtext"><b>Ставки на футбол.UA</b></span>
             </div>
-
-                <div class="mg-top-bottom m-auto col-6">
-                    <nav class="flex-menu">
-                        <div class="flex-menu-item"><a href="#">Прогнози</a></div>
-                        <div class="flex-menu-item"><a href="#">Експреси</a></div>
-                        <div class="flex-menu-item"><a href="#">Букмекери</a></div>
-                        <div class="flex-menu-item"><a href="#">Блог</a></div>
-                    </nav>
-                </div>
+            <div class="mg-top-bottom m-auto col-lg-6">-->
+                <nav class="flex-menu">
+                    <div class="flex-menu-item"><a href="#">Прогнози</a></div>
+                    <div class="flex-menu-item"><a href="#">Експреси</a></div>
+                    <div class="flex-menu-item"><a href="#">Букмекери</a></div>
+                    <div class="flex-menu-item"><a href="#">Блог</a></div>
+                </nav>
+            </div>
         </header>
 
         <main>
@@ -223,13 +321,13 @@
 
             </div>
         </footer>
-        </div>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
