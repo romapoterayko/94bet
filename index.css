@@ -111,6 +111,11 @@ a{
     margin: 5px;
     background-color: white;
     min-height: 150px;
+    padding: 5px;
+}
+
+.when{
+    font-style: italic;
 }
 
 .sorted-menu{
@@ -196,7 +201,7 @@ a{
     }
 }
 
-header .flex-menu-item{
+header .flex-menu-item, .koef{
     text-align: center;
     text-decoration: none;
     font-size: 1rem;
@@ -267,19 +272,18 @@ main nav>div{
     margin-top: 25px;
 }
 
-
-
 .prediction-head{
-    
 }
 
 .flag{
     width: 30px;
+    margin-left: auto;
 }
 
-
-
-
+.koef{
+    margin-top: 10px;
+    margin-left: 5px;
+}
 
 .h-500{
     height: 500px;
